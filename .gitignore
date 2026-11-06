@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+**/.venv/
+**/venv/
+generated_images/
+.env
+ecodesignai.db
