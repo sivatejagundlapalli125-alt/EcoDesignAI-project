@@ -1,0 +1,116 @@
+{
+  "products": [
+    "bottle",
+    "chair",
+    "table",
+    "lamp",
+    "bag",
+    "sofa",
+    "desk",
+    "shelf",
+    "cup",
+    "notebook",
+    "planter",
+    "phone case",
+    "box",
+    "stand",
+    "rack",
+    "shirt",
+    "tshirt",
+    "t-shirt",
+    "t shirt",
+    "jacket",
+    "pants",
+    "clothes",
+    "backpack",
+    "bed",
+    "cabinet",
+    "stool",
+    "watch",
+    "helmet",
+    "shoe",
+    "bowl",
+    "plate"
+  ],
+
+  "materials": [
+    "steel",
+    "plastic",
+    "wood",
+    "glass",
+    "bamboo",
+    "aluminum",
+    "copper",
+    "iron",
+    "fabric",
+    "leather",
+    "rubber",
+    "cardboard",
+    "paper",
+    "cork",
+    "linen",
+    "organic_cotton",
+    "recycled_cotton",
+    "jute",
+    "hemp",
+    "cork_board",
+    "cork_fabric",
+    "recycled_plastic",
+    "recycled_glass",
+    "recycled_steel",
+    "bioplastic",
+    "rice_husk_board",
+    "fly_ash_cement",
+    "hempcrete",
+    "rammed_earth",
+    "bamboo_laminate",
+    "bamboo_fiber",
+    "mycelium_composite",
+    "bagasse_board"
+  ],
+
+  "budget": {
+    "low": [
+      "cheap",
+      "low cost",
+      "budget",
+      "affordable",
+      "economical",
+      "inexpensive",
+      "low"
+    ],
+    "medium": [
+      "average",
+      "mid",
+      "moderate",
+      "standard",
+      "medium"
+    ],
+    "high": [
+      "premium",
+      "expensive",
+      "luxury",
+      "high end",
+      "high"
+    ]
+  },
+
+  "eco_words": [
+    "eco",
+    "green",
+    "sustainable",
+    "environment",
+    "eco friendly",
+    "recyclable",
+    "biodegradable",
+    "low carbon",
+    "organic",
+    "natural"
+  ],
+
+  "durability": {
+    "low": ["fragile", "temporary", "disposable"],
+    "medium": ["standard", "moderate", "regular"],
+    "high": ["durable", "strong", "heavy duty", "long lasting", "robust"]
+  }
+}

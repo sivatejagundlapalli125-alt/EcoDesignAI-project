@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoDesignAI – Interactive Sustainability Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/studio.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <!-- LEFT: Logo -->
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            <h1>Eco<span>Design</span>AI</h1>
+        </div>
+
+         <!-- CENTER: Tagline -->
+        <span class="header-tag">A Sustainable Product Design Assistant</span>
+        
+        <!-- RIGHT: Auth Links -->
+       <div class="auth-links">
+    {% if session['user'] %}
+        <span class="welcome-text">Welcome, {{ session['user'] }}</span>
+        <a href="/logout" class="auth-btn">Logout</a>
+    {% else %}
+        <a href="/login" class="auth-btn">Login</a>
+        <a href="/signup" class="auth-btn signup">Signup</a>
+    {% endif %}
+</div>
+        
+        <div class="status-dot"></div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-panel">
+
+        <div class="spotlight">
+            <div class="section-label">Material of the Moment</div>
+            <div class="spotlight-name" id="spotlight-name">Bamboo</div>
+            <div class="spotlight-sub" id="spotlight-sub">Fast growing, renewable, low carbon footprint.</div>
+        </div>
+
+        <div class="materials-grid" id="materials-grid">
+        <div class="material-card active" data-material="bamboo">Bamboo</div>
+        <div class="material-card" data-material="plastic">Plastic</div>
+        <div class="material-card" data-material="steel">Steel</div>
+        <div class="material-card" data-material="aluminum">Aluminum</div>
+        <div class="material-card" data-material="mycelium">Mycelium</div>
+        <div class="material-card" data-material="bioplastic">Bioplastic</div>
+        </div>
+
+        <div id="impact-display" class="impact-card">
+            <div class="impact-name" id="impact-name">BAMBOO</div>
+
+            <div class="impact-row">
+                <span class="impact-key">Carbon Impact</span>
+                <div class="carbon-track">
+                    <div class="carbon-fill" id="carbon-fill"></div>
+                </div>
+                <span class="impact-val" id="carbon-label">Low</span>
+            </div>
+
+            <div class="impact-row">
+                <span class="impact-key">Recyclable</span>
+                <span class="impact-val" id="detail-recyclable">Yes</span>
+            </div>
+
+            <div class="impact-row">
+                <span class="impact-key">Cost</span>
+                <span class="impact-val" id="detail-cost">Low</span>
+            </div>
+
+            <div class="impact-row">
+                <span class="impact-key">Durability</span>
+                <span class="impact-val" id="detail-durability">Medium</span>
+            </div>
+
+            <button class="design-btn" id="design-with-btn">
+                Design with this material →
+            </button>
+        </div>
+
+        <div class="compare-section">
+            <div class="section-label">Compare Materials</div>
+            <div class="compare-grid" id="compare-grid"></div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE — chatbot in iframe -->
+    <div class="right-panel">
+        <iframe
+            id="chat-frame"
+            src="/chatbot"
+            class="chat-frame"
+            frameborder="0">
+        </iframe>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/studio.js') }}"></script>
+</body>
+</html>
