@@ -16,7 +16,7 @@ AI-powered eco-design: compare sustainable materials and visualize greener produ
 
 ## Run locally on Windows
 
-Use Python 3.10 or newer. From the project root in PowerShell:
+Use Python 3.11 or newer. From the project root in PowerShell:
 
 ```powershell
 py -m venv .venv
